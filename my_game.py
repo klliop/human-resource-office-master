@@ -98,7 +98,7 @@ class Game:
     def win(self, owner_id:int, s:str):
         if self.game_owner != owner_id:
             return False, "방장이 아닙니다."
-        if self.game_state != 13:
+        if self.game_state != 10:
             return False, "게임 중이 아닙니다."
 
         if s == "1팀":
