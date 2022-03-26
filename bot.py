@@ -184,7 +184,7 @@ async def 시작(ctx):
     await ctx.send(game.draft()[1])
 
 @bot.command()
-async def 팀장(ctx, text = None):
+async def 팀장(ctx, *, text = None):
     if text is None:
         help_str = ''
         help_str += '!팀장 1팀팀장 2팀팀장 포지션(탑/정글/미드/원딜/서폿)\n'
