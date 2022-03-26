@@ -131,6 +131,7 @@ async def 참가(ctx):
         await ctx.send(ret[1])
         await ctx.send('!등록 포지션(탑/정글/미드/원딜/서폿)')
         await ctx.send('ex) !등록 탑 정글')
+        return
 
     user = User(id, name, ret[1][1], ret[1][2], ret[1][3])
     ret = game.attend(user)
