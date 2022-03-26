@@ -2,7 +2,7 @@ import discord
 import sqlite3
 from discord.ext import commands
 from discord.utils import get
-from to import Token, T, TB, J, JB, M, MB, A, AB, S, SB
+from to import T, TB, J, JB, M, MB, A, AB, S, SB
 from my_db import DB
 from my_game import Game, Team, User
 
