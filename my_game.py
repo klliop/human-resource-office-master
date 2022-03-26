@@ -1,7 +1,7 @@
 import os
 from typing import List
 from my_db import DB
-from to import Token, T, TB, J, JB, M, MB, A, AB, S, SB
+from to import T, TB, J, JB, M, MB, A, AB, S, SB
 
 class User():
     discord_id: int = 0
