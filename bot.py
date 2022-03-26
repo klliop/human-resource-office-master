@@ -49,7 +49,7 @@ async def 도움말(ctx):
     await ctx.send(embed=embed)
 
 @bot.command()
-async def 등록(ctx, text = None):
+async def 등록(ctx, *, text = None):
     if text is None:
         help_str = ''
         help_str += '!등록 탑 정글 미드 원딜 서폿\n'
@@ -220,7 +220,7 @@ async def 팀장(ctx, text = None):
         await ctx.send(game.draft()[1])
 
 @bot.command()
-async def 픽(ctx, text = None):
+async def 픽(ctx, *, text = None):
     if text is None:
         help_str = ''
         help_str += '!픽 매물번호 포지션(탑/정글/미드/원딜/서폿)\n'
@@ -275,7 +275,7 @@ async def 팀(ctx):
     await ctx.send(embed=embed)
 
 @bot.command()
-async def 승리(ctx, text = None):
+async def 승리(ctx, *, text = None):
     if text is None:
         help_str = ''
         help_str += '!승리 팀(1팀/2팀)\n'
