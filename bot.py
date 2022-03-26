@@ -290,4 +290,4 @@ async def 승리(ctx, text = None):
     ret = game.win(id, text)
     await ctx.send(ret[1])
 
-bot.run(Token)
+bot.run(os.environ['Token'])
